@@ -46,5 +46,3 @@ export const verify = (id, params) => {
   const correctChecksum = checksum(idWithoutCheck).substring(0, length);
   return correctChecksum === check;
 };
-
-console.log(generate({ prefix: "test" }));
